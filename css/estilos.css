@@ -1,0 +1,153 @@
+/* Reset de propriedades */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans' ,sans-serif; 
+    color:gray;
+}
+
+
+/* Mobile First - CSS do mobile */
+
+@media screen and (min-width: 768px){
+
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    /* 
+    justify-content: flex-start;
+    */
+    padding: 5px 5px 0 5px;
+    background-color:black;
+}
+
+header i{
+    font-size: 2rem;
+    color: white;
+}
+
+header img{
+    height: 55px;
+    margin-right: calc(50% - (97px / 2));
+   /* 
+     margin-left: calc(50% - (61.5px + 28px) ); */
+}
+
+header nav{ display: none;}
+
+main{
+    padding-top:  15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#sessao-principal  {
+    padding-bottom: 15px;  /* padding: 0 0 15px 0;*/
+    
+    border-bottom: 2px dotted grey;
+    /*
+    border-bottom-width: 2px;
+    border-bottom-style: dotted;
+    border-bottom-color: grey;
+   */   
+}
+
+#sessao-principal  figure {
+    display: flex;
+    justify-content: center;
+}
+
+#sessao-principal  figure img{
+    height: 150px;    
+    margin-left: -20px;
+}
+
+article{
+    font-size: 0.8rem;
+}
+
+/******************************************* SESSÂO ************************************************/
+#sessao-principal  article h1 {
+    width: 80%;
+    margin-top: 15px;
+    color: orangered;
+    font-size: 1.5rem;        
+}
+
+
+#sessao-principal  article p {
+   /* border :1px solid red; */
+    width: 90%;
+    margin-top: 15px;
+    
+}
+
+#sessao-principal  article a {
+    display: inline-block;
+    margin-top: 15px;    
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+    
+
+ }
+/******************************** SESSÃO PRODUTOS ****************************************************/
+ #produtos {
+     margin: 15px 0 0 0;    
+ }
+
+#produtos article{
+    border: 1px solid grey;    
+ }
+
+#produtos article h2{
+    /*padding: 10px;*/
+    padding-right: 10px;
+    padding-left: 10px;
+    /* para estudo do line height
+       gerando padding top e bottom atarves da altura da linha
+    */
+    line-height: 2rem;
+    text-transform: uppercase;
+    background-color: orangered;   
+    color:white;
+    font-size: 1rem;
+ }
+
+ 
+#produtos article img{
+    margin: 10px;
+    float: left;
+    height: 40px;
+ }
+
+ #produtos article p{
+    padding: 10px;    
+ }
+
+ footer{     
+    margin-top: 25px;
+    padding: 5px;
+    background-color: black;    
+ }
+ footer img{
+    /*float: left;*/
+    width: 30px;
+    margin-top: -15px;
+ }
+ 
+ footer p{
+     /*border: 1px solid white;*/
+     width: 80%;
+     margin: 0 auto;
+     font-size: 0.7rem;
+     text-align: center;
+ }
