@@ -20,6 +20,7 @@ body{
 
 header{
     display: flex;
+    position: relative;
     justify-content:space-between;
     /* 
     justify-content: flex-start;
@@ -40,7 +41,30 @@ header img{
      margin-left: calc(50% - (61.5px + 28px) ); */
 }
 
-header nav{ display: none;}
+header nav{ 
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;    
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 0 10%;
+    background-color: black;
+    color:white;
+}
+
+header nav a{ 
+    text-align: center;
+    color:white;
+    text-decoration: none;
+    /* background-color: red; */
+}
+
+header nav a:hover{     
+     background-color:orangered; 
+     border-radius: 3px;
+}
 
 main{
     padding-top:  15px;
