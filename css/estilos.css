@@ -40,16 +40,27 @@ header img{
    /* 
      margin-left: calc(50% - (61.5px + 28px) ); */
 }
+header input{
+     display:none;
+    /* Efeito equivalente a display:none;
+        position: absolute;
+        width: 0;
+    */
+}
+
+header input:checked ~ nav {
+    display: flex;
+}
 
 header nav{ 
-    display: flex;
+    display: none;
     flex-direction: column;
 
     position: absolute;    
     top: 60px;
     left: 0;
     width: 100%;
-    padding: 0 10%;
+    padding: 0 10% 5px 10%;
     background-color: black;
     color:white;
 }
@@ -71,6 +82,7 @@ main{
     padding-left: 10px;
     padding-right: 10px;
 }
+
 #sessao-principal  {
     padding-bottom: 15px;  /* padding: 0 0 15px 0;*/
     
